@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 600px;
+	margin: 0 auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
+}
+
+html {
+	background-color: white;
+}
+
+#nav_menu ul {
+	list-style: none;
+	position: relative;
+}
+
+#nav_menu ul li {
+	float: left;
+}
+
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+#nav_menu ul ul li {
+	float: none;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#nav_menu ul a {
+	display: block;
+	width: 160px;
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+
+#nav_menu ul a.current {
+	color: yellow;
+}
+/* the styles for the header */
+header {
+	border-bottom: 3px solid #931420;
+	padding: 1.5em 30px 2em 30px;
+	background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+
+header img {
+	float: left;
+	margin-left: 20px;
+}
+
+header h2 {
+	font-size: 170%;
+	color: #800000;
+	margin-left: 120px;
+	margin-bottom: .25em;
+}
+
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+	margin-left: 120px;
+}
+
+.shadow {
+	text-shadow: 1px 1px #800000;
+}
+/* the styles for the section */
+body {
+	width: 800px;
+}
+
+section {
+	width: 525px;
+	float: right;
+	padding: 0 20px 20px 20px;
+	clear: left;
+}
+
+section h1 {
+	font-size: 150%;
+	padding: .5em 0 .25em 0;
+	margin: 0 auto;
+	color: #800000;
+}
+
+article {
+	padding: .5em 0 .5em 0;
+}
+
+article img {
+	float: right;
+	margin: 10px;
+	border: 1px solid black;
+}
+
+article h2 {
+	padding-top: 0;
+}
+
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+article p br {
+	display: block;
+	margin: 10px 0;
+}
+
+aside {
+	width: 215px;
+	float: left;
+	padding: 0 0 20px 20px;
+	clear: left;
+}
+
+aside h2 {
+	font-size: 130%;
+	color: #800000;
+	padding: .5em 0 .25em 0;
+}
+
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+aside img {
+	padding-bottom: 1em;
+}
+
+a:hover, a:focus {
+	font-style: italic;
+}
+
+/* the styles for the footer */
+footer p {
+	text-align: center;
+	padding: 1em 0 1em 0;
+}
+
+footer {
+	background-color: #931420;
+	color: white;
+	clear: both;
+}
